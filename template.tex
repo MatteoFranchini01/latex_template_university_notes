@@ -1,0 +1,64 @@
+\documentclass[a4paper]{book}
+
+% Inclusion of necessary packages
+
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{courier}
+\usepackage{caption}
+\usepackage{enumitem}
+
+% Title and author
+\author{author}
+\title{your_title}
+
+% Page layout setting with title at the top, author, etc.
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{}
+\fancyhead[L]{\textit{\leftmark}}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\textit{Matteo Franchini}}
+
+% Font setting
+
+\usepackage{ebgaramond}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Numbering of the figures according to the chapter
+
+\numberwithin{figure}{chapter}
+
+% Remove the ":" from the caption separation
+
+\captionsetup{labelsep=space}
+
+% Symbol setting of the itemize sub-menu
+
+\setlist[itemize,2]{label=-}
+
+\begin{document}
+
+
+% Creating the cover image
+
+\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{your_img}}
+\thispagestyle{empty}\null
+\newpage
+\clearpage
+
+% Adding the table of contents
+
+\tableofcontents
+
+% Write here your notes
+
+\end{document}
