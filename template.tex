@@ -47,6 +47,15 @@
 
 \setlist[itemize,2]{label=-}
 
+% This allows you to highlight and number the examples, definitions, 
+% theorems by creating a new block, to use it just write \begin{example} \end{example}
+% Remember to change the second part to your language so that it appears correctly in the document
+
+\newtheorem{definition}{Definizione}
+\newtheorem{exercize}{Esercizio}
+\newtheorem{example}{Esempio}
+\newtheorem{theorem}{Teorema}
+
 \begin{document}
 
 \pagenumbering{roman}
@@ -61,6 +70,8 @@
 % Adding the table of contents
 
 \tableofcontents
+
+% -------------- BEGINNING OF YOUR DOCUMENT ------------- % 
 
 \chapter{Chapter 1}
 
